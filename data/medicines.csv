@@ -1,0 +1,101 @@
+brand_name,salt,strength,form,pack_size,brand_price
+Crocin 500,paracetamol,500mg,tablet,15,21.00
+Calpol 500,paracetamol,500mg,tablet,15,16.00
+Dolo 500,paracetamol,500mg,tablet,15,18.00
+Dolo 650,paracetamol,650mg,tablet,15,33.50
+Calpol 650,paracetamol,650mg,tablet,15,31.00
+Pacimol 650,paracetamol,650mg,tablet,15,30.00
+Zerodol,aceclofenac,100mg,tablet,10,84.00
+Hifenac,aceclofenac,100mg,tablet,10,96.00
+Voveran 50,diclofenac,50mg,tablet,10,38.00
+Brufen 400,ibuprofen,400mg,tablet,15,38.00
+Azithral 500,azithromycin,500mg,tablet,5,119.00
+Azee 500,azithromycin,500mg,tablet,5,121.00
+Azithral 250,azithromycin,250mg,tablet,6,66.00
+Azee 250,azithromycin,250mg,tablet,6,70.00
+Mox 500,amoxicillin,500mg,capsule,10,74.00
+Novamox 500,amoxicillin,500mg,capsule,10,78.00
+Ciplox 500,ciprofloxacin,500mg,tablet,10,86.00
+Cifran 500,ciprofloxacin,500mg,tablet,10,92.00
+Taxim-O 200,cefixime,200mg,tablet,10,105.00
+Zifi 200,cefixime,200mg,tablet,10,102.00
+Flagyl 400,metronidazole,400mg,tablet,15,22.00
+Metrogyl 400,metronidazole,400mg,tablet,15,24.00
+Levoflox 500,levofloxacin,500mg,tablet,5,88.00
+Pan 40,pantoprazole,40mg,tablet,15,172.00
+Pantocid 40,pantoprazole,40mg,tablet,15,168.00
+Pantop 40,pantoprazole,40mg,tablet,15,152.00
+Omez 20,omeprazole,20mg,capsule,15,70.00
+Omee 20,omeprazole,20mg,capsule,10,48.00
+Nexpro 40,esomeprazole,40mg,tablet,10,172.00
+Sompraz 40,esomeprazole,40mg,tablet,10,165.00
+Razo 20,rabeprazole,20mg,tablet,10,110.00
+Rabeloc 20,rabeprazole,20mg,tablet,10,92.00
+Domstal,domperidone,10mg,tablet,10,34.00
+Motilium 10,domperidone,10mg,tablet,10,38.00
+Emeset 4,ondansetron,4mg,tablet,10,42.00
+Ondem 4,ondansetron,4mg,tablet,10,48.00
+Glycomet 500,metformin,500mg,tablet,20,27.00
+Glucophage 500,metformin,500mg,tablet,20,31.00
+Glycomet-SR 500,metformin,500mg,tablet sr,20,40.00
+Glucophage SR 500,metformin,500mg,tablet sr,20,42.00
+Glimestar 1,glimepiride,1mg,tablet,10,55.00
+Glimestar 2,glimepiride,2mg,tablet,10,100.00
+Amlong 5,amlodipine,5mg,tablet,15,42.00
+Amlokind 5,amlodipine,5mg,tablet,10,28.00
+Stamlo 5,amlodipine,5mg,tablet,15,47.00
+Amlong 10,amlodipine,10mg,tablet,15,74.00
+Stamlo 10,amlodipine,10mg,tablet,15,76.00
+Atorva 10,atorvastatin,10mg,tablet,15,98.00
+Storvas 10,atorvastatin,10mg,tablet,15,112.00
+Tonact 10,atorvastatin,10mg,tablet,10,68.00
+Atorva 20,atorvastatin,20mg,tablet,15,172.00
+Storvas 20,atorvastatin,20mg,tablet,15,182.00
+Rosuvas 10,rosuvastatin,10mg,tablet,15,168.00
+Rozavel 10,rosuvastatin,10mg,tablet,15,172.00
+Telma 40,telmisartan,40mg,tablet,15,195.00
+Telmikind 40,telmisartan,40mg,tablet,10,112.00
+Telsartan 40,telmisartan,40mg,tablet,10,125.00
+Telma 20,telmisartan,20mg,tablet,15,128.00
+Telmikind 20,telmisartan,20mg,tablet,10,68.00
+Losar 50,losartan,50mg,tablet,15,76.00
+Repace 50,losartan,50mg,tablet,15,92.00
+Aten 50,atenolol,50mg,tablet,14,36.00
+Tenormin 50,atenolol,50mg,tablet,14,44.00
+Clopitab 75,clopidogrel,75mg,tablet,15,122.00
+Plavix 75,clopidogrel,75mg,tablet,14,218.00
+Ecosprin 75,aspirin,75mg,tablet,14,6.50
+Loprin 75,aspirin,75mg,tablet,14,6.80
+Montair 10,montelukast,10mg,tablet,10,186.00
+Montek 10,montelukast,10mg,tablet,10,178.00
+Allegra 120,fexofenadine,120mg,tablet,10,222.00
+Fexofast 120,fexofenadine,120mg,tablet,10,196.00
+Okacet 10,cetirizine,10mg,tablet,10,24.00
+Alerid 10,cetirizine,10mg,tablet,10,38.00
+Thyronorm 25,levothyroxine,25mcg,tablet,120,212.00
+Thyronorm 50,levothyroxine,50mcg,tablet,120,245.00
+Thyronorm 75,levothyroxine,75mcg,tablet,120,292.00
+Thyronorm 100,levothyroxine,100mcg,tablet,120,335.00
+Warf 5,warfarin,5mg,tablet,30,110.00
+Uniwarfin 5,warfarin,5mg,tablet,10,36.00
+Levipil 500,levetiracetam,500mg,tablet,10,218.00
+Keppra 500,levetiracetam,500mg,tablet,10,285.00
+Levera 500,levetiracetam,500mg,tablet,10,205.00
+Eptoin 100,phenytoin,100mg,tablet,10,15.00
+Augmentin 625 Duo,amoxicillin + clavulanic acid,500mg+125mg,tablet,10,224.00
+Clavam 625,amoxicillin + clavulanic acid,500mg+125mg,tablet,10,206.00
+Moxikind-CV 625,amoxicillin + clavulanic acid,500mg+125mg,tablet,10,198.00
+Zerodol-P,aceclofenac + paracetamol,100mg+325mg,tablet,10,116.00
+Hifenac-P,aceclofenac + paracetamol,100mg+325mg,tablet,10,124.00
+Telma-AM,telmisartan + amlodipine,40mg+5mg,tablet,15,248.00
+Telmikind-AM,telmisartan + amlodipine,40mg+5mg,tablet,10,145.00
+Telsartan-AM,telmisartan + amlodipine,40mg+5mg,tablet,10,152.00
+Pan-D,pantoprazole + domperidone,40mg+30mg,capsule sr,15,235.00
+Pantocid DSR,pantoprazole + domperidone,40mg+30mg,capsule sr,10,172.00
+Oflox-OZ,ofloxacin + ornidazole,200mg+500mg,tablet,10,112.00
+Zenflox-OZ,ofloxacin + ornidazole,200mg+500mg,tablet,10,118.00
+Combiflam,ibuprofen + paracetamol,400mg+325mg,tablet,20,54.00
+Urimax 0.4,tamsulosin,0.4mg,capsule sr,15,218.00
+Contiflo-OD 0.4,tamsulosin,0.4mg,capsule sr,15,178.00
+Uprise-D3 60K,cholecalciferol,60000iu,capsule,4,150.00
+D-Rise 60K,cholecalciferol,60000iu,capsule,4,138.00

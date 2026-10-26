@@ -1,0 +1,1768 @@
+{
+  "label": "ideal",
+  "metrics": {
+    "cases": 28,
+    "failed_calls": 0,
+    "medicines": 71,
+    "extraction_correct": 71,
+    "extraction_pct": 100.0,
+    "match_correct": 71,
+    "match_pct": 100.0,
+    "safety_total": 9,
+    "safety_correct": 9,
+    "unsafe_substitutions": 0,
+    "flagged_for_review": 1,
+    "extra_items": 0,
+    "avg_seconds": 0.0
+  },
+  "cases": [
+    {
+      "id": 1,
+      "category": "clean",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Dolo",
+            "strength": "650",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Dolo 650"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Dolo",
+            "strength": "650",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Dolo 650"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Azithral",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Azithral 500"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Azithral",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Azithral 500"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Pan",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Pan 40"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Pan",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Pan 40"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "abbreviations",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Glycomet",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glycomet 500"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Glycomet",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glycomet 500"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Omez",
+            "strength": "20",
+            "form": "capsule",
+            "status": "matched",
+            "brand": "Omez 20"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Omez",
+            "strength": "20",
+            "form": "capsule",
+            "status": "matched",
+            "brand": "Omez 20"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Telma",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Telma 40"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Telma",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Telma 40"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "messy_restricted",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Thyronorm",
+            "strength": "50",
+            "form": null,
+            "status": "ask_doctor",
+            "brand": "Thyronorm 50"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Thyronorm",
+            "strength": "50",
+            "form": null,
+            "status": "ask_doctor",
+            "brand": "Thyronorm 50"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Amlokind",
+            "strength": "5",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Amlokind 5"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Amlokind",
+            "strength": "5",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Amlokind 5"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Cetzin",
+            "strength": "10",
+            "form": null,
+            "status": "not_found",
+            "brand": null,
+            "exact_name": true
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Cetzin",
+            "strength": "10",
+            "form": null,
+            "status": "not_found",
+            "brand": null
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "stress_noise",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Crocin",
+            "strength": null,
+            "form": "syrup",
+            "status": "form_mismatch",
+            "brand": null
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Crocin",
+            "strength": null,
+            "form": "syrup",
+            "status": "form_mismatch",
+            "brand": null
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Pantop",
+            "strength": "40",
+            "form": "injection",
+            "status": "form_mismatch",
+            "brand": null
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Pantop",
+            "strength": "40",
+            "form": "injection",
+            "status": "form_mismatch",
+            "brand": null
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Azee",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Azee 500"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Azee",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Azee 500"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Zerodol-P",
+            "strength": null,
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Zerodol-P"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Zerodol-P",
+            "strength": null,
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Zerodol-P"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "clean",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Crocin",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Crocin 500"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Crocin",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Crocin 500"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Brufen",
+            "strength": "400",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Brufen 400"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Brufen",
+            "strength": "400",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Brufen 400"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "category": "clean",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Mox",
+            "strength": "500",
+            "form": "capsule",
+            "status": "matched",
+            "brand": "Mox 500"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Mox",
+            "strength": "500",
+            "form": "capsule",
+            "status": "matched",
+            "brand": "Mox 500"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Flagyl",
+            "strength": "400",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Flagyl 400"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Flagyl",
+            "strength": "400",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Flagyl 400"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "category": "restricted",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Warf",
+            "strength": "5",
+            "form": "tablet",
+            "status": "ask_doctor",
+            "brand": "Warf 5"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Warf",
+            "strength": "5",
+            "form": "tablet",
+            "status": "ask_doctor",
+            "brand": "Warf 5"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Ecosprin",
+            "strength": "75",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Ecosprin 75"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Ecosprin",
+            "strength": "75",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Ecosprin 75"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "category": "restricted",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Keppra",
+            "strength": "500",
+            "form": "tablet",
+            "status": "ask_doctor",
+            "brand": "Keppra 500"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Keppra",
+            "strength": "500",
+            "form": "tablet",
+            "status": "ask_doctor",
+            "brand": "Keppra 500"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Eptoin",
+            "strength": "100",
+            "form": "tablet",
+            "status": "ask_doctor",
+            "brand": "Eptoin 100"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Eptoin",
+            "strength": "100",
+            "form": "tablet",
+            "status": "ask_doctor",
+            "brand": "Eptoin 100"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "category": "restricted",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Thyronorm",
+            "strength": "75",
+            "form": null,
+            "status": "ask_doctor",
+            "brand": "Thyronorm 75"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Thyronorm",
+            "strength": "75",
+            "form": null,
+            "status": "ask_doctor",
+            "brand": "Thyronorm 75"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Telma",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Telma 40"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Telma",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Telma 40"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Atorva",
+            "strength": "10",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Atorva 10"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Atorva",
+            "strength": "10",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Atorva 10"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "category": "misspelling",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Azithrall",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Azithral 500",
+            "exact_name": true
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Azithrall",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Azithral 500"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Glycomat",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glycomet 500",
+            "exact_name": true
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Glycomat",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glycomet 500"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Amlokaind",
+            "strength": "5",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Amlokind 5",
+            "exact_name": true
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Amlokaind",
+            "strength": "5",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Amlokind 5"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "category": "misspelling",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Omes",
+            "strength": "20",
+            "form": "capsule",
+            "status": "matched",
+            "brand": "Omez 20",
+            "exact_name": true
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": true,
+          "got": {
+            "name": "Omes",
+            "strength": "20",
+            "form": "capsule",
+            "status": "review",
+            "brand": "Omez 20"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Glimstar",
+            "strength": "2",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glimestar 2",
+            "exact_name": true
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Glimstar",
+            "strength": "2",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glimestar 2"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "category": "not_in_database",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Zyloric",
+            "strength": "100",
+            "form": "tablet",
+            "status": "not_found",
+            "brand": null
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Zyloric",
+            "strength": "100",
+            "form": "tablet",
+            "status": "not_found",
+            "brand": null
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Ativan",
+            "strength": "1",
+            "form": "tablet",
+            "status": "not_found",
+            "brand": null
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Ativan",
+            "strength": "1",
+            "form": "tablet",
+            "status": "not_found",
+            "brand": null
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "category": "form_mismatch",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Pan",
+            "strength": "40",
+            "form": "injection",
+            "status": "form_mismatch",
+            "brand": null
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Pan",
+            "strength": "40",
+            "form": "injection",
+            "status": "form_mismatch",
+            "brand": null
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Azee",
+            "strength": "500",
+            "form": "capsule",
+            "status": "form_mismatch",
+            "brand": null
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Azee",
+            "strength": "500",
+            "form": "capsule",
+            "status": "form_mismatch",
+            "brand": null
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "category": "ambiguous",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Azithral",
+            "strength": null,
+            "form": "tablet",
+            "status": "review",
+            "brand": null
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Azithral",
+            "strength": null,
+            "form": "tablet",
+            "status": "review",
+            "brand": null
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Telma",
+            "strength": null,
+            "form": "tablet",
+            "status": "review",
+            "brand": null
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Telma",
+            "strength": null,
+            "form": "tablet",
+            "status": "review",
+            "brand": null
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "category": "strength_not_in_db",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Telma",
+            "strength": "80",
+            "form": "tablet",
+            "status": "review",
+            "brand": null
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Telma",
+            "strength": "80",
+            "form": "tablet",
+            "status": "review",
+            "brand": null
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Dolo",
+            "strength": "250",
+            "form": "tablet",
+            "status": "review",
+            "brand": null
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Dolo",
+            "strength": "250",
+            "form": "tablet",
+            "status": "review",
+            "brand": null
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "category": "no_generic",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Okacet",
+            "strength": "10",
+            "form": "tablet",
+            "status": "no_generic",
+            "brand": "Okacet 10"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Okacet",
+            "strength": "10",
+            "form": "tablet",
+            "status": "no_generic",
+            "brand": "Okacet 10"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Alerid",
+            "strength": "10",
+            "form": "tablet",
+            "status": "no_generic",
+            "brand": "Alerid 10"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Alerid",
+            "strength": "10",
+            "form": "tablet",
+            "status": "no_generic",
+            "brand": "Alerid 10"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "category": "salt_name",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Metformin",
+            "strength": "500",
+            "form": "tablet",
+            "status": "generic_prescribed",
+            "brand": null
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Metformin",
+            "strength": "500",
+            "form": "tablet",
+            "status": "generic_prescribed",
+            "brand": null
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Paracetamol",
+            "strength": "650",
+            "form": "tablet",
+            "status": "generic_prescribed",
+            "brand": null
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Paracetamol",
+            "strength": "650",
+            "form": "tablet",
+            "status": "generic_prescribed",
+            "brand": null
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "category": "combinations",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Augmentin",
+            "strength": "625",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Augmentin 625 Duo"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Augmentin",
+            "strength": "625",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Augmentin 625 Duo"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Combiflam",
+            "strength": null,
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Combiflam"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Combiflam",
+            "strength": null,
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Combiflam"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Pan-D",
+            "strength": null,
+            "form": "capsule",
+            "status": "matched",
+            "brand": "Pan-D"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Pan-D",
+            "strength": null,
+            "form": "capsule",
+            "status": "matched",
+            "brand": "Pan-D"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "category": "sr_vs_normal",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Glycomet-SR",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glycomet-SR 500"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Glycomet-SR",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glycomet-SR 500"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Glycomet",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glycomet 500"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Glycomet",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glycomet 500"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "category": "long_list",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Pan",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Pan 40"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Pan",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Pan 40"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Atorva",
+            "strength": "20",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Atorva 20"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Atorva",
+            "strength": "20",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Atorva 20"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Amlong",
+            "strength": "5",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Amlong 5"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Amlong",
+            "strength": "5",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Amlong 5"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Glimestar",
+            "strength": "2",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glimestar 2"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Glimestar",
+            "strength": "2",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glimestar 2"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Glycomet",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glycomet 500"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Glycomet",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Glycomet 500"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Ecosprin",
+            "strength": "75",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Ecosprin 75"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Ecosprin",
+            "strength": "75",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Ecosprin 75"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "category": "stress_noise",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Montek",
+            "strength": "10",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Montek 10"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Montek",
+            "strength": "10",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Montek 10"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Allegra",
+            "strength": "120",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Allegra 120"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Allegra",
+            "strength": "120",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Allegra 120"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "category": "casual_style",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Dolo",
+            "strength": "650",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Dolo 650"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Dolo",
+            "strength": "650",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Dolo 650"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Pan",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Pan 40"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Pan",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Pan 40"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "category": "clean",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Emeset",
+            "strength": "4",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Emeset 4"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Emeset",
+            "strength": "4",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Emeset 4"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Domstal",
+            "strength": null,
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Domstal"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Domstal",
+            "strength": null,
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Domstal"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "category": "clean",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Rosuvas",
+            "strength": "10",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Rosuvas 10"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Rosuvas",
+            "strength": "10",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Rosuvas 10"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Clopitab",
+            "strength": "75",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Clopitab 75"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Clopitab",
+            "strength": "75",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Clopitab 75"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Aten",
+            "strength": "50",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Aten 50"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Aten",
+            "strength": "50",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Aten 50"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "category": "compact_names",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Pan",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Pan 40"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Pan",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Pan 40"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Dolo",
+            "strength": "650",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Dolo 650"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Dolo",
+            "strength": "650",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Dolo 650"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Telma",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Telma 40"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Telma",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Telma 40"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "category": "no_medicine",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": []
+    },
+    {
+      "id": 27,
+      "category": "clean",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Levoflox",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Levoflox 500"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Levoflox",
+            "strength": "500",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Levoflox 500"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Rabeloc",
+            "strength": "20",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Rabeloc 20"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Rabeloc",
+            "strength": "20",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Rabeloc 20"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Montair",
+            "strength": "10",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Montair 10"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Montair",
+            "strength": "10",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Montair 10"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Nexpro",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Nexpro 40"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Nexpro",
+            "strength": "40",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Nexpro 40"
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "category": "clean",
+      "seconds": 0.0,
+      "error": null,
+      "extra_items": [],
+      "medicines": [
+        {
+          "expected": {
+            "name": "Voveran",
+            "strength": "50",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Voveran 50"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Voveran",
+            "strength": "50",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Voveran 50"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Hifenac-P",
+            "strength": null,
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Hifenac-P"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Hifenac-P",
+            "strength": null,
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Hifenac-P"
+          },
+          "note": ""
+        },
+        {
+          "expected": {
+            "name": "Ondem",
+            "strength": "4",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Ondem 4"
+          },
+          "extraction_ok": true,
+          "match_ok": true,
+          "unsafe": false,
+          "flagged": false,
+          "got": {
+            "name": "Ondem",
+            "strength": "4",
+            "form": "tablet",
+            "status": "matched",
+            "brand": "Ondem 4"
+          },
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

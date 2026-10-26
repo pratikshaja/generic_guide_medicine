@@ -1,0 +1,700 @@
+[
+  {
+    "id": 1,
+    "category": "clean",
+    "text": "Tab Dolo 650 1 tab TDS x 3 days\nTab Azithral 500 1 tab OD x 3 days\nTab Pan 40 1 tab OD before breakfast x 5 days",
+    "medicines": [
+      {
+        "name": "Dolo",
+        "strength": "650",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Dolo 650"
+      },
+      {
+        "name": "Azithral",
+        "strength": "500",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Azithral 500"
+      },
+      {
+        "name": "Pan",
+        "strength": "40",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Pan 40"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "abbreviations",
+    "text": "Rx\n1) Tab. Glycomet 500mg BD pc\n2) Cap. Omez 20 OD ac\n3) Tab Telma 40 OD",
+    "medicines": [
+      {
+        "name": "Glycomet",
+        "strength": "500",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Glycomet 500"
+      },
+      {
+        "name": "Omez",
+        "strength": "20",
+        "form": "capsule",
+        "status": "matched",
+        "brand": "Omez 20"
+      },
+      {
+        "name": "Telma",
+        "strength": "40",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Telma 40"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "messy_restricted",
+    "text": "Thyronorm 50 mcg 1 OD empty stomach\nTab amlokind-5 OD\nCetzin 10 HS prn",
+    "medicines": [
+      {
+        "name": "Thyronorm",
+        "strength": "50",
+        "form": null,
+        "status": "ask_doctor",
+        "brand": "Thyronorm 50"
+      },
+      {
+        "name": "Amlokind",
+        "strength": "5",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Amlokind 5"
+      },
+      {
+        "name": "Cetzin",
+        "strength": "10",
+        "form": null,
+        "status": "not_found",
+        "brand": null,
+        "exact_name": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "stress_noise",
+    "text": "Dx: viral fever\nRx\nSyp Crocin 5ml TDS x 3d\nInj. Pantop 40 IV OD\nTab Azee 500 mg OD x 3d\nTab Zerodol-P 1 BD after food\nAdvice: plenty of fluids, review after 3 days",
+    "medicines": [
+      {
+        "name": "Crocin",
+        "strength": null,
+        "form": "syrup",
+        "status": "form_mismatch",
+        "brand": null
+      },
+      {
+        "name": "Pantop",
+        "strength": "40",
+        "form": "injection",
+        "status": "form_mismatch",
+        "brand": null
+      },
+      {
+        "name": "Azee",
+        "strength": "500",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Azee 500"
+      },
+      {
+        "name": "Zerodol-P",
+        "strength": null,
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Zerodol-P"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "clean",
+    "text": "Tab Crocin 500 SOS\nTab Brufen 400 TDS after food",
+    "medicines": [
+      {
+        "name": "Crocin",
+        "strength": "500",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Crocin 500"
+      },
+      {
+        "name": "Brufen",
+        "strength": "400",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Brufen 400"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "clean",
+    "text": "Cap Mox 500 TDS x 5 days\nTab Flagyl 400 TDS x 5 days",
+    "medicines": [
+      {
+        "name": "Mox",
+        "strength": "500",
+        "form": "capsule",
+        "status": "matched",
+        "brand": "Mox 500"
+      },
+      {
+        "name": "Flagyl",
+        "strength": "400",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Flagyl 400"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "category": "restricted",
+    "text": "Tab Warf 5 mg OD at 6 pm\nTab Ecosprin 75 OD",
+    "medicines": [
+      {
+        "name": "Warf",
+        "strength": "5",
+        "form": "tablet",
+        "status": "ask_doctor",
+        "brand": "Warf 5"
+      },
+      {
+        "name": "Ecosprin",
+        "strength": "75",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Ecosprin 75"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "category": "restricted",
+    "text": "Tab Keppra 500 BD\nTab Eptoin 100 TDS",
+    "medicines": [
+      {
+        "name": "Keppra",
+        "strength": "500",
+        "form": "tablet",
+        "status": "ask_doctor",
+        "brand": "Keppra 500"
+      },
+      {
+        "name": "Eptoin",
+        "strength": "100",
+        "form": "tablet",
+        "status": "ask_doctor",
+        "brand": "Eptoin 100"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "category": "restricted",
+    "text": "Thyronorm 75 mcg OD\nTab Telma 40 OD\nTab Atorva 10 HS",
+    "medicines": [
+      {
+        "name": "Thyronorm",
+        "strength": "75",
+        "form": null,
+        "status": "ask_doctor",
+        "brand": "Thyronorm 75"
+      },
+      {
+        "name": "Telma",
+        "strength": "40",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Telma 40"
+      },
+      {
+        "name": "Atorva",
+        "strength": "10",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Atorva 10"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "category": "misspelling",
+    "text": "Tab Azithrall 500 OD\nTab Glycomat 500 BD\nTab Amlokaind 5 OD",
+    "medicines": [
+      {
+        "name": "Azithrall",
+        "strength": "500",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Azithral 500",
+        "exact_name": true
+      },
+      {
+        "name": "Glycomat",
+        "strength": "500",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Glycomet 500",
+        "exact_name": true
+      },
+      {
+        "name": "Amlokaind",
+        "strength": "5",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Amlokind 5",
+        "exact_name": true
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "category": "misspelling",
+    "text": "Cap Omes 20 OD ac\nTab Glimstar 2 OD",
+    "medicines": [
+      {
+        "name": "Omes",
+        "strength": "20",
+        "form": "capsule",
+        "status": "matched",
+        "brand": "Omez 20",
+        "exact_name": true
+      },
+      {
+        "name": "Glimstar",
+        "strength": "2",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Glimestar 2",
+        "exact_name": true
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "category": "not_in_database",
+    "text": "Tab Zyloric 100 OD\nTab Ativan 1 HS",
+    "medicines": [
+      {
+        "name": "Zyloric",
+        "strength": "100",
+        "form": "tablet",
+        "status": "not_found",
+        "brand": null
+      },
+      {
+        "name": "Ativan",
+        "strength": "1",
+        "form": "tablet",
+        "status": "not_found",
+        "brand": null
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "category": "form_mismatch",
+    "text": "Inj Pan 40 IV OD\nCap Azee 500 OD",
+    "medicines": [
+      {
+        "name": "Pan",
+        "strength": "40",
+        "form": "injection",
+        "status": "form_mismatch",
+        "brand": null
+      },
+      {
+        "name": "Azee",
+        "strength": "500",
+        "form": "capsule",
+        "status": "form_mismatch",
+        "brand": null
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "category": "ambiguous",
+    "text": "Tab Azithral OD x 3 days\nTab Telma OD",
+    "medicines": [
+      {
+        "name": "Azithral",
+        "strength": null,
+        "form": "tablet",
+        "status": "review",
+        "brand": null
+      },
+      {
+        "name": "Telma",
+        "strength": null,
+        "form": "tablet",
+        "status": "review",
+        "brand": null
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "category": "strength_not_in_db",
+    "text": "Tab Telma 80 OD\nTab Dolo 250 TDS",
+    "medicines": [
+      {
+        "name": "Telma",
+        "strength": "80",
+        "form": "tablet",
+        "status": "review",
+        "brand": null
+      },
+      {
+        "name": "Dolo",
+        "strength": "250",
+        "form": "tablet",
+        "status": "review",
+        "brand": null
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "category": "no_generic",
+    "text": "Tab Okacet 10 OD\nTab Alerid 10 OD",
+    "medicines": [
+      {
+        "name": "Okacet",
+        "strength": "10",
+        "form": "tablet",
+        "status": "no_generic",
+        "brand": "Okacet 10"
+      },
+      {
+        "name": "Alerid",
+        "strength": "10",
+        "form": "tablet",
+        "status": "no_generic",
+        "brand": "Alerid 10"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "category": "salt_name",
+    "text": "Tab Metformin 500 mg BD\nTab Paracetamol 650 mg TDS",
+    "medicines": [
+      {
+        "name": "Metformin",
+        "strength": "500",
+        "form": "tablet",
+        "status": "generic_prescribed",
+        "brand": null
+      },
+      {
+        "name": "Paracetamol",
+        "strength": "650",
+        "form": "tablet",
+        "status": "generic_prescribed",
+        "brand": null
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "category": "combinations",
+    "text": "Tab Augmentin 625 Duo BD x 5 days\nTab Combiflam TDS\nCap Pan-D OD before breakfast",
+    "medicines": [
+      {
+        "name": "Augmentin",
+        "strength": "625",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Augmentin 625 Duo"
+      },
+      {
+        "name": "Combiflam",
+        "strength": null,
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Combiflam"
+      },
+      {
+        "name": "Pan-D",
+        "strength": null,
+        "form": "capsule",
+        "status": "matched",
+        "brand": "Pan-D"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "category": "sr_vs_normal",
+    "text": "Tab Glycomet-SR 500 BD\nTab Glycomet 500 BD",
+    "medicines": [
+      {
+        "name": "Glycomet-SR",
+        "strength": "500",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Glycomet-SR 500"
+      },
+      {
+        "name": "Glycomet",
+        "strength": "500",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Glycomet 500"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "category": "long_list",
+    "text": "Rx\n1) Tab Pan 40 OD\n2) Tab Atorva 20 HS\n3) Tab Amlong 5 OD\n4) Tab Glimestar 2 OD before breakfast\n5) Tab Glycomet 500 BD after food\n6) Tab Ecosprin 75 OD after lunch",
+    "medicines": [
+      {
+        "name": "Pan",
+        "strength": "40",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Pan 40"
+      },
+      {
+        "name": "Atorva",
+        "strength": "20",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Atorva 20"
+      },
+      {
+        "name": "Amlong",
+        "strength": "5",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Amlong 5"
+      },
+      {
+        "name": "Glimestar",
+        "strength": "2",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Glimestar 2"
+      },
+      {
+        "name": "Glycomet",
+        "strength": "500",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Glycomet 500"
+      },
+      {
+        "name": "Ecosprin",
+        "strength": "75",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Ecosprin 75"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "category": "stress_noise",
+    "text": "Patient: Test Patient, 34 M\nDate: 12/10/2026\nC/o: cough and cold x 3 days\nTab Montek 10 HS x 5 days\nTab Allegra 120 OD x 3 days\nSteam inhalation. Review SOS.",
+    "medicines": [
+      {
+        "name": "Montek",
+        "strength": "10",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Montek 10"
+      },
+      {
+        "name": "Allegra",
+        "strength": "120",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Allegra 120"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "category": "casual_style",
+    "text": "tab. dolo-650 one tab thrice daily for 3 days\nTab. PAN 40mg once daily",
+    "medicines": [
+      {
+        "name": "Dolo",
+        "strength": "650",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Dolo 650"
+      },
+      {
+        "name": "Pan",
+        "strength": "40",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Pan 40"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "category": "clean",
+    "text": "Tab Emeset 4 SOS\nTab Domstal TDS before food",
+    "medicines": [
+      {
+        "name": "Emeset",
+        "strength": "4",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Emeset 4"
+      },
+      {
+        "name": "Domstal",
+        "strength": null,
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Domstal"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "category": "clean",
+    "text": "Tab Rosuvas 10 HS\nTab Clopitab 75 OD\nTab Aten 50 OD",
+    "medicines": [
+      {
+        "name": "Rosuvas",
+        "strength": "10",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Rosuvas 10"
+      },
+      {
+        "name": "Clopitab",
+        "strength": "75",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Clopitab 75"
+      },
+      {
+        "name": "Aten",
+        "strength": "50",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Aten 50"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "category": "compact_names",
+    "text": "Tab pan 40 od\nTab dolo650 sos\nTab telma40 OD",
+    "medicines": [
+      {
+        "name": "Pan",
+        "strength": "40",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Pan 40"
+      },
+      {
+        "name": "Dolo",
+        "strength": "650",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Dolo 650"
+      },
+      {
+        "name": "Telma",
+        "strength": "40",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Telma 40"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "category": "no_medicine",
+    "text": "Advice: rest, plenty of fluids and warm water gargles.\nReview after 3 days if fever persists.",
+    "medicines": []
+  },
+  {
+    "id": 27,
+    "category": "clean",
+    "text": "Tab Levoflox 500 OD x 5 days\nTab Rabeloc 20 OD before breakfast\nTab Montair 10 HS\nTab Nexpro 40 OD",
+    "medicines": [
+      {
+        "name": "Levoflox",
+        "strength": "500",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Levoflox 500"
+      },
+      {
+        "name": "Rabeloc",
+        "strength": "20",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Rabeloc 20"
+      },
+      {
+        "name": "Montair",
+        "strength": "10",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Montair 10"
+      },
+      {
+        "name": "Nexpro",
+        "strength": "40",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Nexpro 40"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "category": "clean",
+    "text": "Tab Voveran 50 BD after food\nTab Hifenac-P 1 BD\nTab Ondem 4 SOS",
+    "medicines": [
+      {
+        "name": "Voveran",
+        "strength": "50",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Voveran 50"
+      },
+      {
+        "name": "Hifenac-P",
+        "strength": null,
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Hifenac-P"
+      },
+      {
+        "name": "Ondem",
+        "strength": "4",
+        "form": "tablet",
+        "status": "matched",
+        "brand": "Ondem 4"
+      }
+    ]
+  }
+]

@@ -1,0 +1,540 @@
+/* ---------- page frame ---------- */
+.page {
+  width: min(100% - 32px, 760px);
+  margin-inline: auto;
+  padding-block: 20px 56px;
+}
+
+.masthead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-block: 8px 30px;
+}
+
+.mark {
+  width: 30px;
+  height: 14px;
+  border: 1.5px solid var(--ink);
+  border-radius: 7px;
+  background: linear-gradient(90deg, var(--accent) 50%, var(--paper) 50%);
+  transform: rotate(-35deg);
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- intro ---------- */
+.intro h1 {
+  max-width: 24ch;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.intro p {
+  max-width: 56ch;
+  margin-top: 14px;
+  color: var(--muted);
+}
+
+/* ---------- input form ---------- */
+.intake {
+  margin-top: 28px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+}
+
+.modes {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 10px;
+  background: var(--bg);
+}
+
+.modes button {
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modes button[aria-pressed="true"] {
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 0 0 1px var(--line-strong);
+}
+
+.field-label {
+  display: block;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.intake textarea {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  background: var(--paper);
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.example {
+  padding: 5px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.example:hover {
+  background: var(--bg);
+}
+
+.drop {
+  display: grid;
+  place-items: center;
+  min-height: 170px;
+  margin-top: 16px;
+  padding: 16px;
+  border: 1.5px dashed var(--line-strong);
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.drop:hover {
+  background: var(--bg);
+}
+
+.drop:focus-within {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.drop input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.drop img {
+  max-width: 100%;
+  max-height: 260px;
+  border-radius: 8px;
+}
+
+.drop-text {
+  display: grid;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.drop-text strong {
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.file-name {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+.field-error {
+  margin-top: 8px;
+  color: var(--doctor-fg);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  margin-top: 18px;
+}
+
+.primary {
+  padding: 12px 22px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.primary:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+
+.primary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.fine {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.status-line {
+  min-height: 1.6em;
+  margin-top: 16px;
+  color: var(--muted);
+}
+
+/* ---------- results ---------- */
+.results {
+  margin-top: 20px;
+}
+
+.results-title,
+.notice-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.results-title:focus,
+.notice-title:focus {
+  outline: none;
+}
+
+.empty {
+  max-width: 52ch;
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.notice {
+  margin-top: 8px;
+  padding: 14px 16px;
+  border-left: 4px solid var(--line-strong);
+  background: var(--paper);
+}
+
+.notice-error {
+  border-left-color: var(--doctor-fg);
+}
+
+.notice p {
+  margin-top: 6px;
+  max-width: 60ch;
+}
+
+/* the one memorable element: a pharmacy bill that prints in */
+.receipt-wrap {
+  width: min(100%, 440px);
+  margin-top: 16px;
+  filter: drop-shadow(0 1px 0 var(--line-strong));
+}
+
+.receipt {
+  padding: 18px 22px 34px;
+  border-top: 4px double var(--ink);
+  background: var(--paper);
+  -webkit-mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 14px 100%;
+  mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 14px 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .receipt {
+    animation: print 0.7s ease-out both;
+  }
+}
+
+@keyframes print {
+  from {
+    clip-path: inset(0 0 100% 0);
+    transform: translateY(-10px);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+    transform: none;
+  }
+}
+
+.receipt-lines div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 3px;
+}
+
+.receipt-lines dt {
+  color: var(--muted);
+}
+
+.receipt-save {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: 0 12px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--line-strong);
+}
+
+.receipt-save-label {
+  font-weight: 600;
+}
+
+.receipt-save-amount {
+  grid-row: span 2;
+  grid-column: 2;
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.receipt-save-pct {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.receipt-foot {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.receipt-note {
+  max-width: 52ch;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- medicine ledger ---------- */
+.ledger {
+  padding: 0;
+  margin-top: 24px;
+  border-top: 2px solid var(--ink);
+  list-style: none;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px 28px;
+  padding-block: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.row-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+}
+
+.row-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.badge {
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.tone-found {
+  background: var(--found-bg);
+  color: var(--found-fg);
+}
+
+.tone-verify {
+  background: var(--verify-bg);
+  color: var(--verify-fg);
+}
+
+.tone-doctor {
+  background: var(--doctor-bg);
+  color: var(--doctor-fg);
+}
+
+.tone-neutral {
+  background: var(--neutral-bg);
+  color: var(--neutral-fg);
+}
+
+.tone-generic {
+  background: var(--generic-bg);
+  color: var(--generic-fg);
+}
+
+.composition {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.message {
+  max-width: 52ch;
+  margin-top: 8px;
+}
+
+.generic-name {
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+.alts {
+  padding-left: 18px;
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+.how {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.how summary {
+  cursor: pointer;
+  width: fit-content;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 2px 14px;
+  margin-top: 8px;
+}
+
+.facts dt {
+  color: var(--muted);
+}
+
+.facts dd {
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.row-price {
+  min-width: 190px;
+}
+
+.prices {
+  display: grid;
+  gap: 2px;
+}
+
+.prices div {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.prices dt {
+  color: var(--muted);
+}
+
+.prices .save {
+  margin-top: 4px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--line-strong);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.prices .save dt {
+  color: inherit;
+}
+
+.pct {
+  margin-left: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.qty {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+/* ---------- footer ---------- */
+.foot {
+  margin-top: 48px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.foot p {
+  max-width: 62ch;
+}
+
+.foot p + p {
+  margin-top: 6px;
+}
+
+/* ---------- phone ---------- */
+@media (max-width: 560px) {
+  .intake {
+    padding: 14px;
+  }
+
+  .row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .row-price {
+    min-width: 0;
+    max-width: 320px;
+  }
+
+  .qty {
+    text-align: left;
+  }
+
+  .receipt-save-amount {
+    font-size: 2rem;
+  }
+}
