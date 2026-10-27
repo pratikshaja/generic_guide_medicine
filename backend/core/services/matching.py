@@ -12,7 +12,7 @@ REVIEW_THRESHOLD = 70    # between REVIEW and AUTO = "please verify"
 LOW_CONFIDENCE = 0.75    # AI confidence below this = "please verify"
 
 FORM_WORDS = ("tablet", "capsule", "syrup", "injection")
-NOISE_WORDS = {"duo", "forte"}
+NOISE_WORDS = {"duo", "forte", "mg", "mcg", "ml", "iu", "gm"}
 NUMBER_RE = re.compile(r"\d+(?:\.\d+)?")
 NUMERIC_TOKEN_RE = re.compile(r"\d+(?:\.\d+)?(?:k|mg|mcg|ml|iu|g)?")
 
@@ -104,6 +104,15 @@ def _option(m):
     return {"brand_name": m["brand_name"], "strength": m["strength"], "form": m["form"]}
 
 
+def _find_salt(query, catalog):
+    """'clopidogrel 75 mg' / 'clopidogret' -> 'clopidogrel'. Strength is already stripped from query."""
+    by_words = {_name_words(salt): salt for salt in catalog["salts"]}
+    if query in by_words:
+        return by_words[query]
+    hit = process.extractOne(query, list(by_words), scorer=fuzz.ratio)
+    return by_words[hit[0]] if hit and hit[1] >= 88 else None
+
+
 def _match_salt_prescription(item, salt, catalog, result):
     rx_numbers = _numbers(item.get("strength")) | _numbers(item.get("name"))
     rx_form = _form_word(item.get("form"))
@@ -136,9 +145,10 @@ def match_medicine(item, catalog):
     best = process.extractOne(query, bases, scorer=fuzz.ratio)
 
     # Prescribed by salt name (e.g. "Metformin 500mg") instead of a brand name
-    salt_name = _norm(item.get("name"))
-    if salt_name in catalog["salts"] and (best is None or best[1] < AUTO_THRESHOLD):
-        return _match_salt_prescription(item, salt_name, catalog, result)
+    if best is None or best[1] < AUTO_THRESHOLD:
+        salt_name = _find_salt(query, catalog)
+        if salt_name:
+            return _match_salt_prescription(item, salt_name, catalog, result)
 
     if best is None or best[1] < REVIEW_THRESHOLD:
         result["message"] = ("No matching brand in our database. Please check the spelling "

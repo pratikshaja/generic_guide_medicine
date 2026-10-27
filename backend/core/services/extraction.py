@@ -36,11 +36,11 @@ def _medicine_list(data):
         if isinstance(data.get("medicines"), list):
             return data["medicines"]
         if "medicines" in data and data["medicines"] is None:
-            return []                               # {"medicines": null} = nothing found
+            return []                              
         lists = [v for v in data.values() if isinstance(v, list)]
-        if len(lists) == 1:                         # wrong key name, e.g. {"medicine": [...]}
+        if len(lists) == 1:                         
             return lists[0]
-        if "name" in data:                          # a single medicine returned as one object
+        if "name" in data:                         
             return [data]
     return None
 
