@@ -140,12 +140,61 @@
   outline-offset: 2px;
 }
 
-.drop input {
+.file-input {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip-path: inset(50%);
+}
+
+button.drop {
+  width: 100%;
+  background: transparent;
+}
+
+.drop.has-photo {
+  cursor: default;
+}
+
+.drop.has-photo:hover {
+  background: transparent;
+}
+
+.photo-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-top: 10px;
+}
+
+.photo-bar .file-name {
+  margin-top: 0;
+}
+
+.photo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.secondary {
+  padding: 7px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondary:hover {
+  background: var(--bg);
+}
+
+.secondary.danger {
+  border-color: var(--doctor-fg);
+  color: var(--doctor-fg);
 }
 
 .drop img {
@@ -257,36 +306,17 @@
   max-width: 60ch;
 }
 
-/* the one memorable element: a pharmacy bill that prints in */
+/* ---------- savings summary ---------- */
 .receipt-wrap {
   width: min(100%, 440px);
   margin-top: 16px;
-  filter: drop-shadow(0 1px 0 var(--line-strong));
 }
 
 .receipt {
-  padding: 18px 22px 34px;
-  border-top: 4px double var(--ink);
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
   background: var(--paper);
-  -webkit-mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 14px 100%;
-  mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 14px 100%;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .receipt {
-    animation: print 0.7s ease-out both;
-  }
-}
-
-@keyframes print {
-  from {
-    clip-path: inset(0 0 100% 0);
-    transform: translateY(-10px);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-    transform: none;
-  }
 }
 
 .receipt-lines div {
@@ -307,7 +337,7 @@
   gap: 0 12px;
   margin-top: 12px;
   padding-top: 12px;
-  border-top: 1px dashed var(--line-strong);
+  border-top: 1px solid var(--line);
 }
 
 .receipt-save-label {
@@ -346,7 +376,7 @@
 .ledger {
   padding: 0;
   margin-top: 24px;
-  border-top: 2px solid var(--ink);
+  border-top: 1px solid var(--line);
   list-style: none;
 }
 
@@ -476,7 +506,7 @@
 .prices .save {
   margin-top: 4px;
   padding-top: 6px;
-  border-top: 1px dashed var(--line-strong);
+  border-top: 1px solid var(--line);
   color: var(--accent);
   font-weight: 700;
 }

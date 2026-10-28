@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { EXAMPLES, IMAGE_TYPES, MAX_IMAGE_BYTES } from "../constants";
 
 /** The input card: choose text or photo, fill it in, and submit. Reports the input up via onSubmit. */
@@ -8,6 +8,7 @@ export default function PrescriptionForm({ loading, onSubmit }) {
   const [file, setFile] = useState(null);
   const [fileError, setFileError] = useState("");
   const [previewUrl, setPreviewUrl] = useState("");
+  const fileInput = useRef(null);
 
   useEffect(() => {
     if (!file) {
@@ -33,6 +34,11 @@ export default function PrescriptionForm({ loading, onSubmit }) {
       setFile(chosen);
     }
     event.target.value = "";
+  }
+
+  function removeFile() {
+    setFile(null);
+    setFileError("");
   }
 
   function handleSubmit(event) {
@@ -76,18 +82,39 @@ export default function PrescriptionForm({ loading, onSubmit }) {
         </>
       ) : (
         <>
-          <label className="drop">
-            <input type="file" accept={IMAGE_TYPES.join(",")} onChange={pickFile} />
-            {previewUrl ? (
+          <input
+            ref={fileInput}
+            className="file-input"
+            type="file"
+            accept={IMAGE_TYPES.join(",")}
+            onChange={pickFile}
+            aria-label="Choose a prescription photo"
+          />
+          {previewUrl ? (
+            <div className="drop has-photo">
               <img src={previewUrl} alt="Selected prescription" />
-            ) : (
+            </div>
+          ) : (
+            <button type="button" className="drop" onClick={() => fileInput.current?.click()}>
               <span className="drop-text">
                 <strong>Choose a photo of the prescription</strong>
                 <span>JPEG, PNG or WebP, up to 5 MB</span>
               </span>
-            )}
-          </label>
-          {file && <p className="file-name">{file.name}. Choose another photo to replace it.</p>}
+            </button>
+          )}
+          {file && (
+            <div className="photo-bar">
+              <span className="file-name">{file.name}</span>
+              <span className="photo-actions">
+                <button type="button" className="secondary" onClick={() => fileInput.current?.click()}>
+                  Replace photo
+                </button>
+                <button type="button" className="secondary danger" onClick={removeFile}>
+                  Remove photo
+                </button>
+              </span>
+            </div>
+          )}
           {fileError && (
             <p className="field-error" role="alert">
               {fileError}
@@ -100,6 +127,11 @@ export default function PrescriptionForm({ loading, onSubmit }) {
         <button type="submit" className="primary" disabled={!canSubmit}>
           {loading ? "Reading prescription…" : "Find generics"}
         </button>
+         {text && (
+              <button type="button" className="secondary" onClick={() => setText("")}>
+                Clear Text
+              </button>
+            )}
         <p className="fine">Sample prices. Not medical advice.</p>
       </div>
     </form>
